@@ -5,7 +5,7 @@ import PostCollection from './ui-components/PostCollection'
 
 function App() {
   return (
-    <PostCollection />
+    <PostCollection isPaginated itemsPerPage={3} />
   );
 }
 
