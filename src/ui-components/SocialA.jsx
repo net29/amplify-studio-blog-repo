@@ -107,7 +107,7 @@ export default function SocialA(props) {
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                children="Nikhil S"
+                children={post?.author}
                 {...getOverrideProps(
                   overrides,
                   "Flex.Flex[0].Flex[0].Flex[0].Flex[0].Text[0]"
@@ -128,7 +128,7 @@ export default function SocialA(props) {
                 shrink="0"
                 position="relative"
                 padding="0px 0px 0px 0px"
-                children="2nd December 2021"
+                children={post?.updatedAt}
                 {...getOverrideProps(
                   overrides,
                   "Flex.Flex[0].Flex[0].Flex[0].Flex[0].Text[1]"
@@ -176,7 +176,7 @@ export default function SocialA(props) {
               basis="672px"
               position="relative"
               padding="0px 0px 0px 0px"
-              children="AWS Amplify Studio is a visual development environment for building full-stack web and mobile apps that grows with your business. Studio builds on existing backend building capabilities in AWS Amplify, allowing you to build your UI faster with a set of ready-to-use UI components that are editable in Figma. With Studio, you can quickly build an entire web app, front-to-back, with minimal coding, while still maintaining full control over your app design and behavior through code. Ship faster, scale effortlessly, and delight every user."
+              children={post?.content}
               {...getOverrideProps(
                 overrides,
                 "Flex.Flex[0].Flex[0].Flex[1].Text[0]"
