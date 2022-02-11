@@ -1,0 +1,14 @@
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  title: String!
+  author: String!
+  content: String
+  image: AWSURL
+}
+
+type UserAccount @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  username: String
+  password: String
+}
+    
